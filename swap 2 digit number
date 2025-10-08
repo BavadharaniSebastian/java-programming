@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class SwapDigits {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        
+        String numStr = Integer.toString(n);
+
+        if (numStr.length() == 2) {
+            char first = numStr.charAt(0);
+            char second = numStr.charAt(1);
+            System.out.println("" + second + first);
+        } 
+        else if (numStr.length() > 2) {
+            char first = numStr.charAt(0);
+            char second = numStr.charAt(1);
+            System.out.println("" + second + first);
+        } 
+        else {
+            System.out.println("STDOUT");
+        }
+
+        sc.close();
+    }
+}
