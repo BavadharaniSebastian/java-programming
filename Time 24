@@ -8,11 +8,15 @@ public class Solution {
 
     public static void main(String[] args) {
         Scanner A=new Scanner(System.in);
-        int hours=A.nextInt();
-        int minutes=A.nextInt();
-        int seconds=A.nextInt();
-        System.out.println("Total Number of hours is "+hours);
-        System.out.println("Total Number of minutes is "+minutes);
-        System.out.println("Total Number of seconds is "+seconds);
+        int h=A.nextInt();
+        int m=A.nextInt();
+        int s=A.nextInt();
+        m+=s/60;
+        s=s%60;
+        h+=m/60;
+        m=m%60;
+        System.out.println("Total Number of hours is "+h);
+        System.out.println("Total Number of minutes is "+m);
+        System.out.println("Total Number of seconds is "+s);
     }
 }
